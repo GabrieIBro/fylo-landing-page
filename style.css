@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: hsl(243, 87%, 12%);
+    font-size: 1.5rem;
+    margin: 30px 0;
+    max-width: 320px;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: hsl(238, 22%, 44%);
+}
+
+a:hover {
+    transition: ease-in 150ms;
+    filter: invert(36%) sepia(76%) saturate(4678%) hue-rotate(218deg) brightness(100%) contrast(96%);
+}
+
+header {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    width: 170px;
+    align-items: center;
+    margin-left: 5%;
+}
+
+header img {
+    width: 90px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 5%;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 750px 950px 375px;
+}
+
+.grid-container > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7%;
+}
+#illustration-1, #illustration-2 {
+    width: 90%;
+    max-width: 385px;
+    margin-bottom: 50px;
+}
+
+.section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-text p {
+    color: hsl(243, 87%, 12%);
+    max-width: 400px;
+}
+
+.first-section {
+    background-image: url(images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 10%;
+}
+
+.second-section {
+    background-color: hsl(240, 75%, 98%);
+}
+
+.second-section p{
+    margin-bottom: 15px;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    box-shadow: 2px 2px 10px -5px black;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 30px;
+    padding-bottom: 25px;
+    background-color: white;
+}
+
+.testimonial-card > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.testimonial-card > div p:first-child {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.testimonial-card > div p {
+    margin: 0;
+    font-size: 10px;
+}
+
+#how-fylo-works {
+    margin: 40px 0;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+}
+
+#how-fylo-works a{
+    margin-right: 5px;
+    color: hsl(170, 45%, 43%);
+}
+
+#how-fylo-works:hover {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(161deg) brightness(111%) contrast(101%);
+}
+
+.testimonial-card > img {
+    position: absolute;
+    width: 15px;
+    bottom: 85%;
+    left: 9%;
+}
+
+.testimonial-card div img {
+    width: 32px;
+    border-radius: 80px;
+    margin-right: 10px;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+form input {
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 3px;
+}
+
+#button {
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    box-shadow: 2px 2px 10px -5px black;
+}
+
+#button:hover {
+    transition: ease-in-out 150ms;
+    background-color: hsl(224, 100%, 68%);
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(238, 22%, 44%);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    color: white;
+}
+
+.third-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section p {
+    max-width: 450px;
+}
+
+.third-section h2 {
+    color: white;
+}
+
+footer {
+    display: grid;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 250px 50px;
+    padding: 30px 30px;
+}
+
+footer a {
+    filter: invert(99%) sepia(6%) saturate(21%) hue-rotate(175deg) brightness(105%) contrast(100%);
+}
+
+.fylo-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.fylo-information > div {
+    display: flex;
+    align-items: center;
+}
+
+.fylo-information > div img {
+    margin-right: 15px;
+}
+
+.fylo-information > img{
+    filter: invert(99%) sepia(6%) saturate(21%) hue-rotate(175deg) brightness(105%) contrast(100%);
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 30px 0;
+}
+
+.footer-links div a {
+    margin: 2.5px 0;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+}
+
+.social-networks img{   
+    width: 32px;
+    margin: 0 5px;
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        margin-top: 25px;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    .grid-container {
+        grid-template-rows: 700px 700px 300px;
+    }
+
+    .grid-container > div {
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+
+    .first-section {
+        margin-bottom: 100px;
+        background-image: url(images/bg-curve-desktop.svg);
+    }
+
+    .section-text {
+        width: 55%;
+        text-align: left;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 85px 0;
+        padding-left: 60px;
+    }
+
+    .section-text h1, .section-text h2 {
+        font-size: 2.5rem;
+        max-width: 660px;
+        text-align: left;
+    }
+
+    .section-text p {
+        max-width: 600px;
+    }
+
+    form {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    form input {
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .section-image {
+        width: 45%;
+    }
+
+    #illustration-1, #illustration-2 {
+        margin: 0;
+        max-width: 550px;
+    }
+
+    .grid-container .third-section {
+        flex-direction: row;
+    }
+
+    .third-section div {
+        align-items: flex-start;
+    }
+
+    .third-section div h2{
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .third-section form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .third-section form input {
+        margin: 5px 0;
+    }
+
+    .third-section form input:first-child {
+        width: 450px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .footer-links {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+
+    .footer-links > div {
+        margin: 0;
+        margin-top: 100px;
+    }
+
+    .social-networks a {
+        height: 42px;
+        margin-bottom: 50px;
+    }
+
+    .social-networks {
+        align-items: flex-end;
+    }
+}
